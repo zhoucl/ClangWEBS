@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	
+	<!-- velocity -->
+	<bean id="velocityConfigure" class="org.springframework.web.servlet.view.velocity.VelocityConfigurer">
+		<property name="resourceLoaderPath" value="/WEB-INF/home/vmpages/" />
+		<property name="velocityPropertiesMap">
+			<map>
+				<entry key="input.encoding" value="utf-8" />
+				<entry key="output.encoding" value="utf-8" />
+			</map>
+		</property>
+	</bean>
+	
+	<bean id="viewResolver" class="info.clang.web.view.MultiViewResolver">
+		<property name="resolvers">
+			<map>
+				<entry key="jsp">
+					<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+						<property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
+						<property name="prefix" value="/WEB-INF/home/jspages/" />
+						<property name="suffix" value=".jsp" />
+					</bean>
+				</entry>
+				
+				<entry key="vm">
+					<bean class="org.springframework.web.servlet.view.velocity.VelocityViewResolver">
+						<property name="contentType" value="text/html;charset=UTF-8" />
+						<property name="suffix" value=".vm" />
+						<property name="exposeRequestAttributes" value="true" />
+						<property name="exposeSessionAttributes" value="true" />
+						<property name="exposeSpringMacroHelpers" value="true" />
+						<property name="requestContextAttribute" value="rc" />
+						<property name="allowSessionOverride" value="true"/>
+					</bean>
+				</entry>
+			</map>
+		</property>
+	</bean>
+	
+	<!-- i18n国际化 -->
+	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basenames">
+			<list>
+				<value>/WEB-INF/conf/i18n/messages</value>
+				<value>/WEB-INF/conf/i18n/config</value>
+			</list>
+		</property>
+	</bean>
+</beans>
