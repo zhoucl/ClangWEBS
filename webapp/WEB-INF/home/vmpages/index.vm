@@ -1,11 +1,42 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>首页</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	
+	<link rel="stylesheet" href="static/libs/bootstrap/2.3.2/css/bootstrap.css" media="screen" >
+	<link rel="stylesheet" href="static/libs/bootstrap/2.3.2/css/bootstrap-responsive.css" >
+	
+	<!--[if lte IE 6]>
+	<!-- bsie css 补丁文件 -->
+	<link rel="stylesheet" href="static/libs/bootstrap/2.3.2/css/bootstrap-ie6.css" >
+	
+	<!-- bsie 额外的 css 补丁文件 -->
+	<link rel="stylesheet" href="static/libs/bootstrap/2.3.2/css/ie.css">
+	 
+	<![endif]-->
+	
+	<style type="text/css">
+    </style>
 </head>
 
 <body>
-	Hello，World!
+	<div class="container-fluid" style="padding:0px;">
+		<div class="row-fluid" style="padding:0px;">
+			<div class="span3" style="border:1px solid gray; margin:0px;">123</div>
+			<div class="span9" style="border:1px solid red; margin:0px;">333</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="static/libs/jquery/1.9.1/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="static/libs/bootstrap/2.3.2/js/bootstrap.js"></script>
+	
+	<!--[if lte IE 6]>
+	<!-- bsie js 补丁只在IE6中执行 -->
+	<script type="text/javascript" src="static/libs/bootstrap/2.3.2/js/bootstrap-ie.js"></script>
+	<![endif]-->
+	
+	<script type="text/javascript" src="static/js/placeholder4ie.js"></script>
 </body>
 </html>

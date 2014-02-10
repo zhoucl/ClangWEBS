@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<title>Bootstrap2.3.2 Template</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	
+	<link rel="stylesheet" href="libs/bootstrap/2.3.2/css/bootstrap.css" media="screen" >
+	<link rel="stylesheet" href="libs/bootstrap/2.3.2/css/bootstrap-responsive.css" >
+	
+	<!--[if lte IE 6]>
+	<!-- bsie css 补丁文件 -->
+	<link rel="stylesheet" href="libs/bootstrap/2.3.2/css/bootstrap-ie6.css" >
+	
+	<!-- bsie 额外的 css 补丁文件 -->
+	<link rel="stylesheet" href="libs/bootstrap/2.3.2/css/ie.css">
+	 
+	<![endif]-->
+	
+	<style type="text/css">
+		body {
+	        background-color: #CCC;
+	    }
+    </style>
+</head>
+<body>
+	<div class="container">
+		<h1>Hello,World!</h1>
+	
+		<div class="row-fluid">
+			<div class="span12">
+				Level1 Column
+				
+				<div class="row-fluid">
+					<div class="span6">Level2</div>
+					<div class="span6">Level2</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row-fluid">
+			<div class="span12">
+				<p class="lead">
+					Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+				</p>
+				
+				<p class="text-left">Left aligned text.</p>
+				<p class="text-center">Center aligned text.</p>
+				<p class="text-right">Right aligned text.</p>
+				
+				<p class="muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+				<p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+				<p class="text-error">Donec ullamcorper nulla non metus auctor fringilla.</p>
+				<p class="text-info">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.</p>
+				<p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+				
+				<p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr></p>
+				<p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr> is the best thing since sliced bread.</p>
+				
+				<address>
+					<strong>Twitter, Inc.</strong><br>
+					795 Folsom Ave, Suite 600<br>
+					San Francisco, CA 94107<br>
+					<abbr title="Phone">P:</abbr> (123) 456-7890
+				</address>
+				
+				<address>
+					<strong>Full Name</strong><br>
+					<a href="mailto:#">first.last@example.com</a>
+				</address>
+				
+				<blockquote>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+					<small>Someone famous <cite title="Source Title">Source Title</cite></small>
+				</blockquote>
+				<blockquote class="pull-right">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+					<small>Someone famous <cite title="Source Title">Source Title</cite></small>
+				</blockquote>
+				
+				<ul>
+					<li>Lorem ipsum dolor sit amet</li>
+					<li>Consectetur adipiscing elit</li>
+					<li>Nulla volutpat aliquam velit
+						<ul>
+							<li>Phasellus iaculis neque</li>
+						</ul>
+					</li>
+				</ul>
+				
+				<ul class="unstyled">
+					<li>Lorem ipsum dolor sit amet</li>
+					<li>Consectetur adipiscing elit</li>
+					<li>Nulla volutpat aliquam velit
+						<ul>
+							<li>Phasellus iaculis neque</li>
+						</ul>
+					</li>
+				</ul>
+				
+				<ol>
+					<li>Lorem ipsum dolor sit amet</li>
+					<li>Consectetur adipiscing elit</li>
+					<li>Nulla volutpat aliquam velit</li>
+				</ol>
+				
+				<ul class="inline">
+					<li>Lorem ipsum</li>
+					<li>Consectetur</li>
+					<li>Nulla volutpat</li>
+				</ul>
+				
+				<dl>
+					<dt>Nulla volutpat aliquam velit</dt>
+					<dd>Nulla volutpat aliquam velit</dd>
+					
+					<dt>Nulla volutpat aliquam velit</dt>
+					<dd>Nulla volutpat aliquam velit</dd>
+				</dl>
+				
+				<dl class="dl-horizontal">
+					<dt>Nulla volutpat aliquam velit</dt>
+					<dd>Nulla volutpat aliquam velit</dd>
+					
+					<dt>Nulla volutpat aliquam velit</dt>
+					<dd>Nulla volutpat aliquam velit</dd>
+				</dl>
+				
+				<!-- 行内代码 -->
+				<p>
+					For example, <code>&lt;section&gt;</code> should be wrapped as inline.
+				</p>
+				
+				<!-- 基本代码块 -->
+				<pre>
+					&lt;p&gt;Sample text here...&lt;/p&gt;
+				</pre>
+				
+				<pre class="pre-scrollable">
+					&lt;p&gt;Sample text here...&lt;/p&gt;
+				</pre>
+				
+				<!-- 表格默认样式 -->
+				<table class="table">
+					<tr>
+						<td>#ID</td>
+						<td>UserName</td>
+						<td>Password</td>
+					</tr>
+				
+					<tr>
+						<td>0001</td>
+						<td>张三</td>
+						<td>zhangsan</td>
+					</tr>
+				</table>
+				
+				<!-- IE7-8不支持 -->
+				<table class="table table-striped">
+					<tr>
+						<td>#ID</td>
+						<td>UserName</td>
+						<td>Password</td>
+					</tr>
+				
+					<tr>
+						<td>0001</td>
+						<td>张三</td>
+						<td>zhangsan</td>
+					</tr>
+				</table>
+				
+				<table class="table table-bordered">
+					<tr>
+						<td>#ID</td>
+						<td>UserName</td>
+						<td>Password</td>
+					</tr>
+				
+					<tr>
+						<td>0001</td>
+						<td>张三</td>
+						<td>zhangsan</td>
+					</tr>
+				</table>
+				
+				<table class="table table-hover table-condensed table-bordered">
+					<tr class="success">
+						<td>#ID</td>
+						<td>UserName</td>
+						<td>Password</td>
+					</tr>
+				
+					<tr class="warning">
+						<td>0001</td>
+						<td>张三</td>
+						<td>zhangsan</td>
+					</tr>
+				</table>
+				
+				
+				<!-- 表单 -->
+				<form>
+					<fieldset>
+						<legend>Legend</legend>
+						<label>Label name</label>
+						<input type="text" placeholder="Type something…">
+						<span class="help-block">Example block-level help text here.</span>
+						<label class="checkbox" style="width: 100px;">
+							<input type="checkbox"> Check me out
+						</label>
+						<button type="submit" class="btn">Submit</button>
+					</fieldset>
+				</form>
+				
+				<!-- 搜索表单,search-query可让输入框变圆角 -->
+				<form class="form-search">
+					<input type="text" class="input-medium search-query">
+					<button type="submit" class="btn">Search</button>
+				</form>
+				
+				<!-- 行内表单 -->
+				<form class="form-inline">
+					<input type="text" class="input-small" placeholder="Email">
+					<input type="password" class="input-small" placeholder="Password">
+					<label class="checkbox">
+						<input type="checkbox">Remember me
+					</label>
+					<button type="submit" class="btn">Sign in</button>
+				</form>
+				
+				<!-- 水平表单 -->
+				<form class="form-horizontal">
+					<div class="control-group">
+						<label class="control-label" for="inputEmail">Email</label>
+						<div class="controls">
+							<input type="text" id="inputEmail" placeholder="Email">
+						</div>
+					</div>
+					
+					<div class="control-group">
+						<label class="control-label" for="inputPassword">Password</label>
+						<div class="controls">
+							<input type="text" id="inputPassword" placeholder="Password">
+						</div>
+					</div>
+					
+					<div class="control-group">
+						<div class="controls">
+							<label class="checkbox">
+								<input type="checkbox">Remember me
+							</label>
+							<button type="submit" class="btn">Sign in</button>
+						</div>
+					</div>
+				</form>
+				
+				<!-- 复选框和单选框(默认) -->
+				<form>
+					<label class="checkbox">
+						<input type="checkbox" name="checkboxname" value="1">Option 1
+					</label>
+					<label class="checkbox">
+						<input type="checkbox" name="checkboxname" value="2">Option 2
+					</label>
+					
+					<label class="radio">
+						<input type="radio" name="radioname" value="3">Radio 3
+					</label>
+					<label class="radio">
+						<input type="radio" name="radioname" value="4">Radio 4
+					</label>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="span12">
+				<!-- 前缀和附加输入框 -->
+				<!-- 默认 -->
+				<div class="input-prepend">
+					<span class="add-on">@</span>
+					<input class="span2" id="prependedInput" type="text" placeholder="Username">
+				</div>
+				
+				<div class="input-append">
+					<input class="span2" id="appendedInput" type="text">
+					<span class="add-on">.00</span>
+				</div>
+				
+				<!-- 组合 -->
+				<div class="input-prepend input-append">
+					<span class="add-on">$</span>
+					<input class="span2" id="appendedPrependedInput" type="text">
+					<span class="add-on">.00</span>
+				</div>
+				
+				<!-- 按钮 -->
+				<div class="input-append">
+					<input class="span2" id="appendedInput" type="text">
+					<span class="add-on btn">Search</span>
+					<span class="add-on btn">Options</span>
+				</div>
+				
+				<!-- 按钮下拉菜单 -->
+				<div class="input-append">
+					<input class="span2" id="appendedInput" type="text">
+					<div class="btn-group">
+						<button class="btn dropdown-toggle" data-toggle="dropdown">
+							请选择
+							<span class="caret"></span>
+						</button>
+						
+						<ul class="dropdown-menu">
+							<li><a href="#">选择一</a></li>
+							<li><a href="#">选择二</a></li>
+							<li class="divider"></li>
+							<li><a href="#">其他选择</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<!-- 分段式下拉菜单 -->
+				<div class="input-append">
+					<input class="span2" id="appendedInput" type="text">
+					<div class="btn-group">
+						<button class="btn">Action</button>
+						<button class="btn dropdown-toggle" data-toggle="dropdown">
+							<span class="caret"></span>
+						</button>
+						
+						<ul class="dropdown-menu">
+							<li><a href="#">选择一</a></li>
+							<li><a href="#">选择二</a></li>
+							<li class="divider"></li>
+							<li><a href="#">其他选择</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<!-- 验证状态 -->
+				<form class="form-horizontal">
+					<div class="control-group warning">
+						<label class="control-label" for="inputWarning">Input with warning</label>
+						<div class="controls">
+							<input type="text" id="inputWarning">
+							<span class="help-inline">Something may have gone wrong!</span>
+						</div>
+					</div>
+					
+					<div class="control-group error">
+						<label class="control-label" for="inputError">Input with Error</label>
+						<div class="controls">
+							<input type="text" id="inputError">
+							<span class="help-inline">Something may have gone Error!</span>
+						</div>
+					</div>
+					
+					<div class="control-group info">
+						<label class="control-label" for="inputInfo">Input with info</label>
+						<div class="controls">
+							<input type="text" id="inputInfo">
+							<span class="help-inline">Something may have gone info!</span>
+						</div>
+					</div>
+					
+					<div class="control-group success">
+						<label class="control-label" for="inputSuccess">Input with Success</label>
+						<div class="controls">
+							<input type="text" id="inputSuccess">
+							<span class="help-inline">Something may have gone Success!</span>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="span12">
+				<p><a href="#" class="btn"><span class="icon icon-user"></span>&nbsp;用户</a></p>
+				
+				<p><a href="#" class="btn btn-primary"><i class="icon-search icon-white"></i>&nbsp;主要</a></p>
+				
+				<p><a href="#" class="btn btn-info btn-mini">信息</a></p>
+				<p><a href="#" class="btn btn-success">成功</a></p>
+				<p><a href="#" class="btn btn-warning">警告</a></p>
+				<p><a href="#" class="btn btn-danger">危险</a></p>
+				<p><a href="#" class="btn btn-inverse">反向</a></p>
+				<p><a href="#" class="btn btn-link">链接</a></p>
+				
+				<p><input type="button" class="btn btn-primary" value="Input"></p>
+			</div>
+			
+			<div class="span2">
+				<p><a href="#" class="btn btn-primary btn-block">登陆</a></p>
+				<p><a href="#" class="btn btn-primary btn-block disabled">禁用状态</a></p>
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="libs/jquery/1.9.1/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="libs/bootstrap/2.3.2/js/bootstrap.js"></script>
+	
+	<!--[if lte IE 6]>
+	<!-- bsie js 补丁只在IE6中执行 -->
+	<script type="text/javascript" src="libs/bootstrap/2.3.2/js/bootstrap-ie.js"></script>
+	<![endif]-->
+	
+	<script type="text/javascript" src="js/placeholder4ie.js"></script>
+</body>
+</html>

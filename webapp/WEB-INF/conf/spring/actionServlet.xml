@@ -14,9 +14,15 @@
 		</property>
 	</bean>
 	
+	<!-- freemarker
+	<bean id="freemarkerConfigure" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+		<property name="templateLoaderPath" value="/WEB-INF/home/fmtpages/" />
+	</bean> -->
+	
 	<bean id="viewResolver" class="info.clang.web.view.MultiViewResolver">
 		<property name="resolvers">
 			<map>
+				<!-- JSP解析 -->
 				<entry key="jsp">
 					<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 						<property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
@@ -25,6 +31,7 @@
 					</bean>
 				</entry>
 				
+				<!-- Velocity解析 -->
 				<entry key="vm">
 					<bean class="org.springframework.web.servlet.view.velocity.VelocityViewResolver">
 						<property name="contentType" value="text/html;charset=UTF-8" />
@@ -34,6 +41,15 @@
 						<property name="exposeSpringMacroHelpers" value="true" />
 						<property name="requestContextAttribute" value="rc" />
 						<property name="allowSessionOverride" value="true"/>
+					</bean>
+				</entry>
+				
+				<!-- Freemarker解析 -->
+				<entry key="fmt">
+					<bean class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+						<property name="contentType" value="text/html;charset=UTF-8" />
+						<property name="prefix" value="/WEB-INF/home/fmtpages/" />
+						<property name="suffix" value=".fmt" />
 					</bean>
 				</entry>
 			</map>

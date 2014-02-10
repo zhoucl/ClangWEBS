@@ -1,2 +1,4 @@
 eclipse.preferences.version=1
-encoding//webapp/WEB-INF/home/jspages/index.jsp=UTF-8
+encoding//webapp/WEB-INF/home/jspages/common/hbootstrap.jsp=UTF-8
+encoding//webapp/WEB-INF/home/jspages/common/tbootstrap.jsp=UTF-8
+encoding//webapp/WEB-INF/home/jspages/login.jsp=UTF-8
